@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book a consultation with Apex Chambers - Schedule your legal consultation online">
+    <title>Book Consultation | Apex Chambers - Badagry Law Firm</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-scale-balanced"></i>
+                    <div class="logo-text">
+                        <span class="logo-main">APEX CHAMBERS</span>
+                        <span class="logo-sub">Legal Practitioners & Consultants</span>
+                    </div>
+                </div>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="practice.html" class="nav-link">Practice Areas</a></li>
+                    <li><a href="team.html" class="nav-link">Our Team</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="booking.html" class="btn btn-primary nav-cta">Book Consultation</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Book a Consultation</h1>
+            <p>Schedule your legal consultation with our expert team</p>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="booking-container">
+                <div class="booking-info">
+                    <h2>Why Book With Us?</h2>
+                    <p>Schedule a consultation with our experienced legal team. We offer both in-office and virtual consultations to suit your needs.</p>
+                    
+                    <div class="booking-features">
+                        <div class="booking-feature">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Flexible Scheduling</h4>
+                                <p>Choose a time that works best for you, including evening appointments.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="booking-feature">
+                            <i class="fas fa-video"></i>
+                            <div>
+                                <h4>Virtual Consultations</h4>
+                                <p>Meet with our lawyers online from the comfort of your home or office.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="booking-feature">
+                            <i class="fas fa-shield-halved"></i>
+                            <div>
+                                <h4>Confidential</h4>
+                                <p>All consultations are strictly confidential and privileged.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="booking-feature">
+                            <i class="fas fa-naira-sign"></i>
+                            <div>
+                                <h4>Affordable Rates</h4>
+                                <p>Competitive consultation fees with flexible payment options.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="booking-contact">
+                        <h3>Or Contact Us Directly</h3>
+                        <ul>
+                            <li><i class="fas fa-phone"></i> <a href="tel:+2348001234567">+234 800 123 4567</a></li>
+                            <li><i class="fas fa-envelope"></i> <a href="mailto:info@apexchambers.ng">info@apexchambers.ng</a></li>
+                            <li><i class="fas fa-location-dot"></i> 27, Marina Road, Badagry, Lagos</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="booking-form-wrapper">
+                    <h2>Request a Consultation</h2>
+                    <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+                    
+                    <form id="bookingForm" class="booking-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name <span class="required">*</span></label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lastName">Last Name <span class="required">*</span></label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="practiceArea">Practice Area <span class="required">*</span></label>
+                            <select id="practiceArea" name="practiceArea" required>
+                                <option value="">Select a practice area</option>
+                                <option value="corporate">Corporate & Commercial Law</option>
+                                <option value="property">Property & Real Estate</option>
+                                <option value="family">Family Law</option>
+                                <option value="criminal">Criminal Defense</option>
+                                <option value="litigation">Civil Litigation</option>
+                                <option value="immigration">Immigration Law</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="preferredDate">Preferred Date <span class="required">*</span></label>
+                                <input type="date" id="preferredDate" name="preferredDate" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="preferredTime">Preferred Time <span class="required">*</span></label>
+                                <select id="preferredTime" name="preferredTime" required>
+                                    <option value="">Select a time</option>
+                                    <option value="9:00 AM">9:00 AM</option>
+                                    <option value="10:00 AM">10:00 AM</option>
+                                    <option value="11:00 AM">11:00 AM</option>
+                                    <option value="12:00 PM">12:00 PM</option>
+                                    <option value="2:00 PM">2:00 PM</option>
+                                    <option value="3:00 PM">3:00 PM</option>
+                                    <option value="4:00 PM">4:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="consultationType">Consultation Type <span class="required">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="consultationType" value="in-person" required>
+                                    <span>In-Person</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="consultationType" value="virtual">
+                                    <span>Virtual (Online)</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Brief Description of Your Case <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Please provide a brief overview of your legal matter..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="consent" required>
+                                <span>I agree to the processing of my personal data in accordance with the <a href="#">Privacy Policy</a> <span class="required">*</span></span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">
+                            <i class="fas fa-calendar-check"></i> Book Consultation
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Urgent Legal Matter?</h2>
+                <p>Call us now for immediate assistance. We're available during business hours.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+2348001234567" class="btn btn-primary btn-lg"><i class="fas fa-phone"></i> Call Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-scale-balanced"></i>
+                        <span>APEX CHAMBERS</span>
+                    </div>
+                    <p>Providing exceptional legal services in Badagry, Lagos State, and across Nigeria with integrity and professionalism.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="practice.html">Practice Areas</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Practice Areas</h4>
+                    <ul class="footer-links">
+                        <li><a href="practice.html#corporate">Corporate Law</a></li>
+                        <li><a href="practice.html#property">Property Law</a></li>
+                        <li><a href="practice.html#family">Family Law</a></li>
+                        <li><a href="practice.html#criminal">Criminal Defense</a></li>
+                        <li><a href="practice.html#litigation">Civil Litigation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-location-dot"></i> 27, Marina Road, Badagry, Lagos State, Nigeria</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+2348001234567">+234 800 123 4567</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@apexchambers.ng">info@apexchambers.ng</a></li>
+                        <li><i class="fas fa-clock"></i> Mon - Fri: 8:00 AM - 5:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Apex Chambers. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
